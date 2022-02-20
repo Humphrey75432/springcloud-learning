@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: distribute-config-client
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: distribute-config-server
+      profile: dev
+server:
+  port: 7002
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1001/eureka/
